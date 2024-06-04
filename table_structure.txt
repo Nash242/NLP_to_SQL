@@ -1,0 +1,11 @@
+{
+  "dept": {
+    "EmployeeID": "Employeeid of type SMALLINT (Primary Key)",
+    "HireDate": "Hiredate of type DATE"
+  },
+  "emp": {
+    "FirstName": "Firstname of type NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+    "PhoneNumber": "Phonenumber of type NVARCHAR(50) COLLATE \"SQL_Latin1_General_CP1_CI_AS\"",
+    "EmployeeID": "Employeeid of type SMALLINT (Primary Key)"
+  }
+}

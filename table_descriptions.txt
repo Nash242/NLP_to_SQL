@@ -1,0 +1,11 @@
+{
+  "dept": {
+    "EmployeeID": "Primary key for uniquely identifying employees in dept table with SMALLINT as data type.",
+    "HireDate": "The date when the employee was hired with DATE as data type."
+  },
+  "emp": {
+    "EmployeeID": "Primary key for uniquely identifying employees in emp table with SMALLINT as data type.",
+    "FirstName": "The first name of the employee with NVARCHAR(50) as data type.",
+    "PhoneNumber": "The phone number of the employee with NVARCHAR(50) as data type."
+  }
+}

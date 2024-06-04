@@ -1,0 +1,14 @@
+"Question":"How many employees are there in each department?",
+"Answer":"SELECT d.DepartmentName, COUNT(e.EmployeeID) AS employee_count FROM dept d JOIN emp e ON d.DepartmentID = e.DepartmentID GROUP BY d.DepartmentID, d.DepartmentName;"
+
+"Question":"What is the average salary of employees in each department?",
+"Answer":"SELECT d.DepartmentName, AVG(d.Salary) AS avg_salary FROM dept d JOIN emp e ON d.DepartmentID = e.DepartmentID GROUP BY d.DepartmentID, d.DepartmentName;"
+
+"Question":"Who are the managers of each department?",
+"Answer":"SELECT d.DepartmentName, e.FirstName, e.LastName FROM dept d JOIN emp e ON d.ManagerID = e.EmployeeID;"
+
+"Question":"How many employees have the same supervisor?",
+"Answer":"SELECT d.SupervisorID, COUNT(e.EmployeeID) AS employee_count FROM dept d JOIN emp e ON d.SupervisorID = e.EmployeeID GROUP BY d.SupervisorID;"
+
+"Question":"What is the distribution of employees by gender in each department?",
+"Answer":"SELECT d.DepartmentName, e.Gender, COUNT(e.EmployeeID) AS employee_count FROM dept d JOIN emp e ON d.DepartmentID = e.DepartmentID GROUP BY d.DepartmentID, d.DepartmentName, e.Gender;"
